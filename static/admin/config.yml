@@ -1,0 +1,50 @@
+site_url: https://YOUR-ORG.github.io/aichat-manual
+
+backend:
+  name: github
+  repo: YOUR-ORG/aichat-manual
+  branch: main
+  base_url: https://decap.YOUR-DOMAIN.com
+
+local_backend: true
+
+media_folder: "static/img/uploads"
+public_folder: "/img/uploads"
+
+publish_mode: editorial_workflow
+
+i18n:
+  structure: multiple_folders
+  locales: [en, nl]
+  default_locale: en
+
+collections:
+  - name: "docs_en"
+    label: "Docs (English)"
+    i18n: true
+    folder: "docs/en"
+    create: false
+    format: "frontmatter"
+    extension: "md"
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string", i18n: true }
+      - { label: "ID", name: "id", widget: "string", i18n: duplicate }
+      - { label: "Sidebar Label", name: "sidebar_label", widget: "string", required: false, i18n: true }
+      - { label: "Slug", name: "slug", widget: "string", i18n: duplicate }
+      - { label: "Body", name: "body", widget: "markdown", i18n: true }
+
+  - name: "docs_nl"
+    label: "Docs (Nederlands)"
+    i18n: true
+    folder: "docs/nl"
+    create: false
+    format: "frontmatter"
+    extension: "md"
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string", i18n: true }
+      - { label: "ID", name: "id", widget: "string", i18n: duplicate }
+      - { label: "Sidebar Label", name: "sidebar_label", widget: "string", required: false, i18n: true }
+      - { label: "Slug", name: "slug", widget: "string", i18n: duplicate }
+      - { label: "Body", name: "body", widget: "markdown", i18n: true }

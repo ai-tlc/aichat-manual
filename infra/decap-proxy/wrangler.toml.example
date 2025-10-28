@@ -1,0 +1,13 @@
+name = "decap-oauth-proxy"
+main = "src/index.js"
+compatibility_date = "2024-01-01"
+
+workers_dev = false
+
+[env.production]
+name = "decap-oauth-proxy"
+route = { pattern = "decap.YOUR-DOMAIN.com/*", zone_name = "YOUR-DOMAIN.com" }
+
+# Set these secrets using: npx wrangler secret put GITHUB_OAUTH_ID
+# and: npx wrangler secret put GITHUB_OAUTH_SECRET
+# Get these from your GitHub OAuth App settings
