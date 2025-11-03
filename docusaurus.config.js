@@ -3,10 +3,10 @@ const config = {
   tagline: 'User manual for UvA AI Chat',
   favicon: 'img/favicon.ico',
 
-  url: 'https://YOUR-ORG.github.io',
+  url: 'https://ai-tlc.github.io',
   baseUrl: '/aichat-manual/',
 
-  organizationName: 'YOUR-ORG',
+  organizationName: 'ai-tlc',
   projectName: 'aichat-manual',
 
   onBrokenLinks: 'warn',
