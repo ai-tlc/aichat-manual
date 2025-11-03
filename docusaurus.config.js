@@ -4,10 +4,10 @@ const config = {
   favicon: 'img/favicon.ico',
 
   url: 'https://ai-tlc.github.io',
-  baseUrl: '/aichat-manual/',
+  baseUrl: '/',
 
   organizationName: 'ai-tlc',
-  projectName: 'aichat-manual',
+  projectName: 'ai-tlc.github.io',
 
   onBrokenLinks: 'warn',
 
